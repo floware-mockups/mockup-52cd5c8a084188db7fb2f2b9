@@ -1,0 +1,252 @@
+{
+  "title": "Gestione delle richieste di manutenzione del verde pubblico",
+  "description": "Prototipo navigabile per registrare, filtrare e monitorare le richieste di manutenzione del verde, con priorità e quartiere. Tutti i nomi e i dati sono inventati.",
+  "accent": "emerald",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Panoramica",
+      "description": "Riepilogo delle richieste e delle attività di manutenzione del verde.",
+      "metrics": [
+        {
+          "label": "Richieste aperte",
+          "value": "12"
+        },
+        {
+          "label": "Priorità alta",
+          "value": "3"
+        },
+        {
+          "label": "In lavorazione",
+          "value": "5"
+        },
+        {
+          "label": "Completate questo mese",
+          "value": "18"
+        }
+      ],
+      "columns": [
+        "Stato",
+        "Priorità",
+        "Quartiere",
+        "Richiesta",
+        "Data"
+      ],
+      "rows": [
+        [
+          "Aperta",
+          "Alta",
+          "Lumo",
+          "Ramo caduto vicino al sentiero",
+          "12/05/2026"
+        ],
+        [
+          "In lavorazione",
+          "Media",
+          "Vela",
+          "Potatura delle siepi",
+          "11/05/2026"
+        ],
+        [
+          "Aperta",
+          "Bassa",
+          "Nubi",
+          "Ripristino di una fioriera",
+          "10/05/2026"
+        ],
+        [
+          "Completata",
+          "Media",
+          "Lumo",
+          "Taglio dell’erba nel parco",
+          "09/05/2026"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "richieste",
+      "title": "Richieste",
+      "description": "Elenco filtrabile delle segnalazioni di manutenzione, ordinabile per stato, priorità e quartiere.",
+      "metrics": [
+        {
+          "label": "Richieste totali",
+          "value": "35"
+        },
+        {
+          "label": "Da assegnare",
+          "value": "7"
+        }
+      ],
+      "columns": [
+        "Codice",
+        "Quartiere",
+        "Priorità",
+        "Intervento",
+        "Stato",
+        "Data segnalazione"
+      ],
+      "rows": [
+        [
+          "VR-2401",
+          "Lumo",
+          "Alta",
+          "Rimozione ramo spezzato",
+          "Aperta",
+          "12/05/2026"
+        ],
+        [
+          "VR-2402",
+          "Vela",
+          "Media",
+          "Potatura siepi",
+          "In lavorazione",
+          "11/05/2026"
+        ],
+        [
+          "VR-2403",
+          "Nubi",
+          "Bassa",
+          "Ripristino fioriera",
+          "Aperta",
+          "10/05/2026"
+        ],
+        [
+          "VR-2404",
+          "Lumo",
+          "Media",
+          "Taglio erba",
+          "Completata",
+          "09/05/2026"
+        ],
+        [
+          "VR-2405",
+          "Vela",
+          "Alta",
+          "Messa in sicurezza di un albero",
+          "Assegnata",
+          "08/05/2026"
+        ],
+        [
+          "VR-2406",
+          "Nubi",
+          "Bassa",
+          "Raccolta foglie",
+          "Completata",
+          "07/05/2026"
+        ]
+      ],
+      "form": [
+        "Codice",
+        "Quartiere",
+        "Priorità",
+        "Intervento",
+        "Stato",
+        "Data segnalazione"
+      ]
+    },
+    {
+      "id": "nuova-richiesta",
+      "title": "Nuova richiesta",
+      "description": "Registra una richiesta di manutenzione con i dati essenziali per assegnare la priorità e avviare l’intervento.",
+      "metrics": [],
+      "columns": [
+        "Codice",
+        "Quartiere",
+        "Priorità",
+        "Intervento",
+        "Stato",
+        "Data segnalazione"
+      ],
+      "rows": [],
+      "form": [
+        "Codice",
+        "Quartiere",
+        "Priorità",
+        "Intervento",
+        "Stato",
+        "Data segnalazione"
+      ]
+    },
+    {
+      "id": "interventi",
+      "title": "Interventi",
+      "description": "Tabella filtrabile degli interventi assegnati e del loro avanzamento.",
+      "metrics": [
+        {
+          "label": "Interventi pianificati",
+          "value": "9"
+        },
+        {
+          "label": "In corso",
+          "value": "5"
+        }
+      ],
+      "columns": [
+        "Codice intervento",
+        "Quartiere",
+        "Attività",
+        "Priorità",
+        "Squadra",
+        "Stato",
+        "Data prevista"
+      ],
+      "rows": [
+        [
+          "IN-801",
+          "Lumo",
+          "Rimozione ramo spezzato",
+          "Alta",
+          "Squadra Brina",
+          "Pianificato",
+          "15/05/2026"
+        ],
+        [
+          "IN-802",
+          "Vela",
+          "Potatura siepi",
+          "Media",
+          "Squadra Rugiada",
+          "In corso",
+          "14/05/2026"
+        ],
+        [
+          "IN-803",
+          "Nubi",
+          "Ripristino fioriera",
+          "Bassa",
+          "Squadra Muschio",
+          "Pianificato",
+          "16/05/2026"
+        ],
+        [
+          "IN-804",
+          "Lumo",
+          "Taglio erba",
+          "Media",
+          "Squadra Brina",
+          "Completato",
+          "09/05/2026"
+        ],
+        [
+          "IN-805",
+          "Vela",
+          "Messa in sicurezza di un albero",
+          "Alta",
+          "Squadra Rugiada",
+          "In corso",
+          "13/05/2026"
+        ]
+      ],
+      "form": [
+        "Codice intervento",
+        "Quartiere",
+        "Attività",
+        "Priorità",
+        "Squadra",
+        "Stato",
+        "Data prevista"
+      ]
+    }
+  ]
+}
